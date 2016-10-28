@@ -66,6 +66,31 @@ module Iamport
       pay_post(uri, body)
     end
 
+
+    # Subscribe payment onetime
+    # https://api.iamport.kr/#!/subscribe/payments/onetime
+    def subscribe_onetime(body)
+      pay_post("subscribe/payments/onetime", body)
+    end
+
+    # Subscribe payment again
+    # https://api.iamport.kr/#!/subscribe/payments/again
+    def subscribe_again(body)
+      pay_post("subscribe/payments/again", body)
+    end
+
+    # Subscribe payment schedule
+    # https://api.iamport.kr/#!/subscribe/payments/again
+    def subscribe_schedule(body)
+      pay_post("subscribe/payments/again", body)
+    end
+
+    # Subscribe payment schedule
+    # https://api.iamport.kr/#!/subscribe/payments/again
+    def subscribe_unschedule(body)
+      pay_post("subscribe/payments/again", body)
+    end
+
     private
 
     # Get header data
